@@ -5,6 +5,10 @@ body {
 
 }
 
+footer {
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
 .yosemite {
     width:30%;
             height:30%;
