@@ -19,15 +19,14 @@
 
   .darkblue {
     color:white;
-    background-color: black;
+    background-color: darkolivegreen;
 
-    height:350px;
-  
+
   }
 
   .purple {
     color:white;
-    background-color:navy;
+    background-color:	rgb(52,61,70);
 
   }
 
@@ -76,6 +75,15 @@
   .nav-item {
     display:inline;
   }
-   
 
+  body {
+    font-family: 'Poppins', sans-serif;
+    
+  }
+   
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
   

@@ -11,10 +11,16 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="me.css" type="text/css">
     <link rel = "stylesheet" href="modal.css" type = "text/css" media="all">
+    <link rel = "stylesheet" href="overlay.css" type = "text/css" media="all">
+    <link rel ="stylesheet" href="header.css" type = "text/css" media="all">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!--Poppins font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     
  
      <script>
@@ -75,99 +81,105 @@
   
   <!-- End Hero Section -->
 
-  <main>
+  <main class = "container-fluid self-center py-5 " >
     <div class="container-fluid darkblue py-5 d-flex self-center">
-      <div>
+      <div class="row">
+        <div class="col-md-4">
           <h1 class="hi display-1">Hi, I'm Elijah</h1>
+        </div>
+        <div class="col-md-4">
           <p class="display-4 text-base">
-              I am an undergraduate senior at the University of Maryland.
-              <br>
-              I am studying Computer Science and plan to pursue the fullstack field
-              <br> as well as data Science
-              field. I love creating visuals that helps everyday life.
+            I'm a St. Louis native studying Computer Science at the University of Maryland. 
+            I've found a real passion for full-stack development and a curiousity for data science. 
+            As I'm heading into my final year, I'm stoked to see where these interests take me.
           </p>
-      </div>
-      <img src="happyelijah.png" alt="happy" class="img-fluid ">
-  </div>
-  
-  
-
-    <div class = "container-fluid purple self-center py-5 justify-between">
-      <h1 class = "display-1">About Me</h1>
-      <div class = "row">
-
-        <div class = "col-md-8">
-          <img src = "yosemite.jpg" alt="Me at yosemite" class = "img-fluid
-          " style = "height:80%; width:50%;">
         </div>
-        <div class = "col-md-4">
-         
-     
+        <div class="col-md-4 d-flex align-items-center">
+          <img src="happyelijah.png" alt="happy" class="img-fluid">
 
-          <p class = "lead text-base">
-          I started my life in St. Louis, Missouri. Growing up, 
-          <br>
-          I always had an interest in computers and technology. 
-          <br>
-          However, I did not initially pursue this in high school 
-          <br>
-          or during my freshman year of college.
-          </p>
-      
-          <br>
-          <p class = "lead text-base">
-          I started college at American University in Washington D.C. <br>
-          as a Political Science major. While computers are a part of my life, 
-          <br>I also have a passion for politics and government. Before college, <br>
-          I worked for numerous political companies, helped at polls, and 
-          <br>participated in my community. Because of this background, 
-          I thought <br>that pursuing political science would be a good plan. 
-          However, this <br>changed during the second semester of my freshman year.
-
-          </p>
-         
-          <br>
-          <p class = "lead text-base">
-          I was enrolled in a class where we would meet three times a week, 
-          and for one of the days, we would visit different government 
-          locations such as the White House or the Electoral College. 
-          At every visit, there would always be a speaker who talked 
-          about programming skills in the government and how they are important. 
-          I was already thinking about switching to CS, so this made it much easier.
-          </p>
-    
-          <br>
-          <p class = "lead text-base">
-          I now attend UMD and am almost done with the program before I
-           enter the real world. During my time here, I have discovered
-            that I have a passion for web development and would like to
-             pursue this in the real world. I plan to create more projects 
-             that show my skill set in the field.
-
-      </p>
         </div>
-        
       </div>
     </div>
+    
+    
+  
+
+    <div class="container-fluid purple self-center py-5 justify-between">
+      <h1 class="display-1">About Me</h1>
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <img src="yosemite.jpg" alt="Me at yosemite" class="img-fluid">
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <p class="lead text-base">
+            I started my life in St. Louis, Missouri. Growing up, 
+            I always had an interest in computers and technology. 
+            However, I did not initially pursue this in high school 
+            or during my freshman year of college.
+          </p>
+          <p class="lead text-base">
+            I started college at American University in Washington D.C. 
+            as a Political Science major. While computers are a part of my life, 
+            I also have a passion for politics and government. Before college, 
+            I worked for numerous political companies, helped at polls, and 
+            participated in my community. Because of this background, 
+            I thought that pursuing political science would be a good plan. 
+            However, this changed during the second semester of my freshman year.
+          </p>
+          <p class="lead text-base">
+            I was enrolled in a class where we would meet three times a week, 
+            and for one of the days, we would visit different government 
+            locations such as the White House or the Electoral College. 
+            At every visit, there would always be a speaker who talked 
+            about programming skills in the government and how they are important. 
+            I was already thinking about switching to CS, so this made it much easier.
+          </p>
+          <p class="lead text-base">
+            I now attend UMD and am almost done with the program before I
+            enter the real world. During my time here, I have discovered
+            that I have a passion for web development and would like to
+            pursue this in the real world. I plan to create more projects 
+            that show my skill set in the field.
+          </p>
+        </div>
+      </div>
+    </div>
+    
     
 
  <!--start of div about contact -->
 
- <div class = "container-fluid darkblue">
-    <!-- Modal for Resume -->
-
-    <img id = "myImg" src = "_~Resume-1.png" alt = "Resume" style = "width:100%;max-width:300px">
-
-
-    <div id = "myModal" class = "modal">
-      <span class = "close">&times;</span>
-      <img class = "modal-content" src = "_~Resume-1.png" id = "img01">
-      <div id = "caption"> </div>
-
-
+ <div class="container-fluid darkblue py-5 d-flex self-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 text-center hover-effect">
+        <a id="myImg" href="#">
+          <img src="_~Resume-1.png" alt="Resume" class="img-fluid mb-3" id = "img01" style="max-height: 200px;">
+          <div class="overlay">
+            <button class="btn btn-primary">My Resume</button>
+          </div>
+        </a>
+        <h4>My Resume</h4>
+        
+      </div>
+      
+      <div class="col-md-4 text-center">
+        <a href="https://mlbstats.onrender.com/" target="_blank">
+          <img src="mlbstats.png" alt="MLB Stats" class="img-fluid mb-3">
+        </a>
+        <h4>MLB Stats</h4>
+        <p>Check out this MLB stats website I worked on.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <a href="https://github.com/eballard2023" target="_blank">
+          <i class="fab fa-github fa-5x mb-3"></i>
+        </a>
+        <h4>My GitHub</h4>
+        <p>Visit my GitHub profile to see the rest of my projects.</p>
+      </div>
     </div>
- </div>
-   
+  </div>
+</div>
 
     <div class = "purple">
       <h1 class = "display-1"> Get in Touch </h1>
@@ -179,6 +191,17 @@
       <h2 class = "contacticons text-center">elijahballard07@gmail.com</h2>
 
       <h2 class = "contacticons text-center">+1 (314) 795-2640</h2>
+
+
+        <!-- Modal for Resume -->
+  <div id = "myModal" class = "modal">
+    <span class = "close">&times;</span>
+    <img class = "modal-content" src = "_~Resume-1.png" id = "img01">
+    <div id = "caption">Resume</div>
+
+
+  </div>
+
     </div>
   </main>
   

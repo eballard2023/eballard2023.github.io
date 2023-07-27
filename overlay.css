@@ -1,0 +1,36 @@
+.hover-effect {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hover-effect img {
+    filter: blur(2px);
+    transition: .3s ease;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: .3s ease;
+  }
+  
+  .hover-effect:hover .btn {
+    background: #fff;
+    color: #000;
+    content: "View Resume";
+  }
+  
