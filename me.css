@@ -85,5 +85,15 @@
     max-width: 100%;
     height: auto;
   }
+
+  /* used for adjusting size for mobile devices */
+  @media (max-width: 768px) {
+    .display-1 {
+      font-size: 2.5rem;
+    }
+    .display-4 {
+      font-size: 1.2rem;
+    }
+  }
   
   
